@@ -1,23 +1,307 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" data-theme="dark">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Sitio web personal de Alejandra - Desarrolladora Web & Galería Interactiva de Fauna Fascinante (Mapache, Okapi, Kiwi, Pudú, Puma, Equidna)">
+    <meta name="author" content="Alejandra">
+    <title>Alejandra | Mi Primera Web & Fauna Fascinante</title>
+
+    <!-- Google Fonts & FontAwesome -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    alejandra ...
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta numquam reiciendis commodi voluptas! Dolorem
-        ipsum odit, quas amet, non, facere a saepe porro consequuntur doloremque vel iusto est? Dolor, ad?</p>
-    <a href="https://www.google.com">google</a>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
+    <!-- HEADER / NAVIGATION -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#hero" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <span>Alejandra<span class="gradient-text">.dev</span></span>
+            </a>
 
+            <nav>
+                <ul class="nav-links" id="nav-links">
+                    <li><a href="#hero" class="nav-link active">Inicio</a></li>
+                    <li><a href="#about" class="nav-link">Sobre Mí</a></li>
+                    <li><a href="#fauna" class="nav-link">Fauna Fascinante</a></li>
+                    <li><a href="#skills" class="nav-link">Habilidades</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+
+            <div class="nav-actions">
+                <button class="theme-toggle" id="theme-toggle-btn" aria-label="Cambiar tema claro/oscuro">
+                    <i class="fas fa-sun" id="theme-icon"></i>
+                </button>
+                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Abrir menú de navegación">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section class="hero" id="hero">
+            <div class="hero-bg-blobs">
+                <div class="blob blob-1"></div>
+                <div class="blob blob-2"></div>
+            </div>
+
+            <div class="container hero-grid">
+                <div class="hero-content">
+                    <span class="badge">
+                        <i class="fas fa-sparkles"></i> Bienvenidos a Mi Primera Web
+                    </span>
+                    <h1 class="hero-title">
+                        ¡Hola! Soy <span class="gradient-text">Alejandra</span> 👋
+                    </h1>
+                    <p class="hero-description">
+                        Desarrolladora Web en formación creando experiencias digitales limpias, modernas e interactivas. Explora mi proyecto escolar y nuestra enciclopedia interactiva de fauna silvestre.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#fauna" class="btn btn-primary">
+                            <i class="fas fa-paw"></i> Explorar Fauna
+                        </a>
+                        <a href="#about" class="btn btn-secondary">
+                            <i class="fas fa-user-circle"></i> Saber Más
+                        </a>
+                    </div>
+                    <div class="tech-pills">
+                        <span class="tech-pill"><i class="fab fa-html5" style="color: #e34f26;"></i> HTML5</span>
+                        <span class="tech-pill"><i class="fab fa-css3-alt" style="color: #1572b6;"></i> CSS3</span>
+                        <span class="tech-pill"><i class="fab fa-js" style="color: #f7df1e;"></i> JavaScript</span>
+                        <span class="tech-pill"><i class="fab fa-git-alt" style="color: #f05032;"></i> Git & GitHub</span>
+                    </div>
+                </div>
+
+                <div class="hero-visual">
+                    <div class="hero-avatar-wrapper">
+                        <div class="hero-avatar-content">
+                            <div class="avatar-emoji">👩‍💻</div>
+                            <h2 class="avatar-caption">Mi Primera Web</h2>
+                            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-top: 0.25rem;">Clase 02 · Proyecto Web</p>
+                        </div>
+                    </div>
+                    <div class="floating-badge">
+                        <span class="floating-icon">🚀</span>
+                        <div class="floating-text">
+                            <h4>Publicado con Éxito</h4>
+                            <p>GitHub Pages Ready</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME SECTION -->
+        <section class="about-section" id="about">
+            <div class="container">
+                <div class="about-grid">
+                    <div class="about-text">
+                        <span class="badge" style="margin-bottom: 1rem;">
+                            <i class="fas fa-code"></i> Sobre el Proyecto
+                        </span>
+                        <h2 class="section-title" style="text-align: left;">Construyendo mi primer sitio en la web</h2>
+                        <p>
+                            Este proyecto nació como parte de las actividades prácticas para dominar el desarrollo web con <strong>HTML5 y CSS3</strong>, aplicando el flujo de trabajo profesional con <strong>Git</strong> desde la terminal y publicándolo en internet mediante <strong>GitHub Pages</strong>.
+                        </p>
+                        <p>
+                            Además de estructurar código limpio y accesible, este espacio destaca una cuidada selección de animales fascinantes (Mapache, Okapi, Kiwi, Pudú, Puma y Equidna) vinculados a sus fuentes enciclopédicas oficiales en Wikipedia.
+                        </p>
+                    </div>
+
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">6</div>
+                            <div class="stat-label">Especies de Fauna</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100%</div>
+                            <div class="stat-label">Responsivo & Adaptable</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Git</div>
+                            <div class="stat-label">Control de Versiones</div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">Pages</div>
+                            <div class="stat-label">Despliegue Continuo</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAUNA SHOWCASE SECTION -->
+        <section class="fauna-section" id="fauna">
+            <div class="container">
+                <span class="badge" style="margin: 0 auto 1rem auto; display: table;">
+                    <i class="fas fa-globe-americas"></i> Galería Interactiva
+                </span>
+                <h2 class="section-title">Fauna Fascinante 🌿</h2>
+                <p class="section-subtitle">
+                    Descubre detalles, hábitats y curiosidades sobre las especies animales seleccionadas para nuestro proyecto web.
+                </p>
+
+                <!-- Filter & Search Controls -->
+                <div class="filter-bar">
+                    <div class="search-box">
+                        <i class="fas fa-search search-icon"></i>
+                        <input type="text" id="search-input" class="search-input" placeholder="Buscar por nombre o especie..." aria-label="Buscar animal">
+                    </div>
+                    <div class="filter-tags">
+                        <button class="filter-btn active" data-filter="todos">Todos</button>
+                        <button class="filter-btn" data-filter="mamiferos">Mamíferos</button>
+                        <button class="filter-btn" data-filter="aves">Aves</button>
+                        <button class="filter-btn" data-filter="felinos">Felinos</button>
+                        <button class="filter-btn" data-filter="exoticos">Exóticos</button>
+                    </div>
+                </div>
+
+                <!-- Animal Cards Grid -->
+                <div class="animals-grid" id="animals-grid">
+                    <!-- Loaded dynamically via script.js -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS SECTION -->
+        <section class="skills-section" id="skills">
+            <div class="container">
+                <span class="badge" style="margin: 0 auto 1rem auto; display: table;">
+                    <i class="fas fa-laptop-code"></i> Habilidades
+                </span>
+                <h2 class="section-title">Tecnologías & Aprendizaje</h2>
+                <p class="section-subtitle">
+                    Herramientas y lenguajes que estoy aprendiendo y aplicando en este proyecto.
+                </p>
+
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon" style="color: #e34f26;"><i class="fab fa-html5"></i></div>
+                        <h3 class="skill-name">HTML5 Semántico</h3>
+                        <p class="skill-desc">Estructuración web accesible, limpia y optimizada para SEO.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 90%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon" style="color: #1572b6;"><i class="fab fa-css3-alt"></i></div>
+                        <h3 class="skill-name">CSS3 & Diseños Responsive</h3>
+                        <p class="skill-desc">Estilos con Flexbox, CSS Grid, variables y animaciones avanzadas.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 85%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon" style="color: #f7df1e;"><i class="fab fa-js"></i></div>
+                        <h3 class="skill-name">JavaScript Moderno</h3>
+                        <p class="skill-desc">Lógica interactiva, manipulación del DOM y eventos dinámicos.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 75%;"></div></div>
+                    </div>
+
+                    <div class="skill-card">
+                        <div class="skill-icon" style="color: #f05032;"><i class="fab fa-git-alt"></i></div>
+                        <h3 class="skill-name">Git & GitHub</h3>
+                        <p class="skill-desc">Control de versiones, trabajo con ramas y despliegue en GitHub Pages.</p>
+                        <div class="progress-bar"><div class="progress-fill" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION -->
+        <section class="contact-section" id="contact">
+            <div class="container">
+                <span class="badge" style="margin: 0 auto 1rem auto; display: table;">
+                    <i class="fas fa-envelope"></i> Contacto
+                </span>
+                <h2 class="section-title">¿Tienes alguna pregunta?</h2>
+                <p class="section-subtitle">
+                    Envíame un mensaje o comentario sobre el proyecto web.
+                </p>
+
+                <div class="contact-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="contact-name">Nombre completo</label>
+                            <input type="text" id="contact-name" class="form-input" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-email">Correo electrónico</label>
+                            <input type="email" id="contact-email" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contact-message">Mensaje</label>
+                            <textarea id="contact-message" class="form-textarea" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="justify-content: center; width: 100%; font-size: 1rem;">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ANIMAL DETAIL MODAL -->
+    <div class="modal" id="animal-modal" role="dialog" aria-modal="true">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close-btn" aria-label="Cerrar modal">&times;</button>
+            <img src="" alt="" class="modal-img" id="modal-img">
+            <div class="modal-body">
+                <h2 class="modal-title" id="modal-title"></h2>
+                <p style="font-size: 0.9rem; color: var(--accent-emerald); font-weight: 600; margin-bottom: 0.5rem;" id="modal-scientific"></p>
+                <p class="modal-text" id="modal-desc"></p>
+                <div style="background: var(--bg-primary); padding: 1rem; border-radius: var(--radius-md); border: 1px solid var(--border-color); margin-bottom: 1.5rem;">
+                    <p style="font-size: 0.85rem; color: var(--text-secondary); display: flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-map-marker-alt" style="color: var(--accent-emerald);"></i> <strong>Hábitat:</strong> <span id="modal-habitat"></span>
+                    </p>
+                </div>
+                <a href="" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="modal-wiki-link" style="width: 100%; justify-content: center;">
+                    <i class="fab fa-wikipedia-w"></i> Leer artículo completo en Wikipedia
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- TOAST NOTIFICATION -->
+    <div class="toast" id="toast">
+        <i class="fas fa-check-circle" style="font-size: 1.2rem;"></i>
+        <span class="toast-msg">Mensaje enviado exitosamente</span>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <a href="#hero" class="logo">
+                <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+                <span>Alejandra<span class="gradient-text">.dev</span></span>
+            </a>
+            <ul class="footer-links">
+                <li><a href="#hero">Inicio</a></li>
+                <li><a href="#about">Sobre Mí</a></li>
+                <li><a href="#fauna">Fauna</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <p class="copyright">
+                © 2026 Alejandra. Todos los derechos reservados. Desarrollado con HTML, CSS & JS.
+            </p>
+        </div>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
 </body>
 
 </html>
